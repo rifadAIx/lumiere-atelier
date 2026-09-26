@@ -1652,4 +1652,38 @@ header .logo-text small {
     letter-spacing: 2px;
     margin-top: 4px;
 }
+/* FINAL LOGO SETTINGS */
 
+header .logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+}
+
+header .logo img {
+    width: 42px !important;
+    height: 42px !important;
+    object-fit: contain !important;
+}
+
+header .logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+header .logo-text span {
+    font-size: 20px !important;
+    line-height: 1 !important;
+    letter-spacing: 4px !important;
+}
+
+header .logo-text small {
+    font-size: 9px !important;
+    letter-spacing: 3px !important;
+    margin-top: 4px !important;
+}
