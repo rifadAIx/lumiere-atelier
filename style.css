@@ -1587,5 +1587,69 @@ body {
         white-space: normal;
     }
 }
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
 
+.logo {
+    margin-left: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text span {
+    font-size: 22px;
+}
+
+.logo-text small {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+header .logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 7px;
+}
+
+header .logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+header .logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+header .logo-text span {
+    font-size: 20px !important;
+    line-height: 1;
+}
+
+header .logo-text small {
+    font-size:15px !important;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
 
