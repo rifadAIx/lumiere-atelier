@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE ATELIER | Fashion Designer</title>
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+       <div class="logo">
+    <span>LUMIÈRE</span>
+    <small>ATELIER</small>
+</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#collections">Collections</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+
+        <p class="small-title">LUMIÈRE<br>ATELIER</p>
+</div>
+
+<h1>Elegance<br>in Every Stitch</h1>
+
+<p>
+    Timeless bridal fashion, thoughtfully designed
+    with elegance, creativity and attention to detail.
+</p>
+    
+           <a href="#collections" class="button">
+    Explore Collection
+</a>
+
+</section>
+
+    <section id="about" class="about">
+
+    <div class="about-image">
+        <img src="images/about.jpg" alt="Fashion Designer">
+    </div>
+
+    <div class="about-text">
+        <p class="small-title">ABOUT THE DESIGNER</p>
+
+        <h2>Creating Fashion<br>with Passion</h2>
+
+        <p>
+            Welcome to my fashion world. I create unique,
+            elegant and modern designs with a special
+            attention to style and detail.
+        </p>
+
+        <p>
+            Every outfit is designed to make you feel
+            confident, beautiful and comfortable.
+        </p>
+    </div>
+
+</section>
+
+
+    <section id="collections" class="collections">
+
+        <p class="small-title">MY WORK</p>
+        <h2>Featured Collections</h2>
+
+        <div class="collection-grid">
+
+            <div class="collection-card">
+                <img src="images/dress1.jpg" alt="Fashion Collection">
+                <h3>Bridal Collection</h3>
+                <p>Elegant designs for special moments.</p>
+            </div>
+
+            <div class="collection-card">
+                <img src="images/dress2.jpg" alt="Fashion Collection">
+                <h3>Evening Wear</h3>
+                <p>Graceful styles for unforgettable evenings.</p>
+            </div>
+
+            <div class="collection-card">
+                <img src="images/dress3.jpg" alt="Fashion Collection">
+                <h3>Modern Collection</h3>
+                <p>Contemporary fashion with timeless beauty.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="gallery" class="gallery">
+
+        <p class="small-title">PORTFOLIO</p>
+        <h2>My Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" alt="Fashion" onclick="openLightbox(this)">
+            <img src="images/gallery2.jpg" alt="Fashion" onclick="openLightbox(this)">
+            <img src="images/gallery3.jpg" alt="Fashion" onclick="openLightbox(this)">
+            <img src="images/gallery4.jpg" alt="Fashion" onclick="openLightbox(this)">
+            <img src="images/gallery5.jpg" alt="Fashion" onclick="openLightbox(this)">
+            <img src="images/gallery6.jpg" alt="Fashion" onclick="openLightbox(this)">
+
+        </div>
+
+    </section>
+
+
+    <section class="services">
+
+        <p class="small-title">WHAT I DO</p>
+        <h2>My Services</h2>
+
+        <div class="service-grid">
+
+            <div class="service">
+                <h3>Custom Design</h3>
+                <p>Unique outfits designed specially for you.</p>
+            </div>
+
+            <div class="service">
+                <h3>Bridal Wear</h3>
+                <p>Beautiful bridal designs for your special day.</p>
+            </div>
+
+            <div class="service">
+    <h3>Personal Styling</h3>
+    <p>Personal styling and fashion consultation.</p>
+</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>Let's Create Something Beautiful</h2>
+
+        <p>
+            For custom designs, appointments and enquiries,
+            get in touch with me.
+        </p>
+
+       <a href="https://instagram.com/rin_sharinzy" class="button" target="_blank">
+    Instagram ↗
+    <a href="https://wa.me/919539994943" class="button whatsapp-button" target="_blank">
+    WhatsApp
+</a>
+</a>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Fashion Designer. All Rights Reserved.</p>
+    </footer>
+
+<button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+</button>
+<div id="lightbox" onclick="closeLightbox()">
+    <button onclick="event.stopPropagation(); closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="Gallery Image" onclick="event.stopPropagation()">
+</div>
+
+<script>
+function openLightbox(image) {
+    document.getElementById("lightbox-img").src = image.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+});
+</script>
+</body>
+</html>
